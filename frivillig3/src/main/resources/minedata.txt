@@ -1,0 +1,8 @@
+test
+
+denne
+fila
+skal bare
+bli
+til store bokstava
+æåø

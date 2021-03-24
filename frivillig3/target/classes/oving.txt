@@ -1,0 +1,40 @@
+
+
+Alle filer har UTF-8 encoding. Hvis du sitter på en plattform som ikke bruker UTF-8 som default, og har problemer med å kompilere noen av filene (Paragrafer.java, f.eks.) prøv å kjøre kommandoen "javac -encoding UTF8 filnavn.java"
+
+Oppgave 1:
+Skriv et program – MineData.java, som leser en og en linje med tekst fra datafilen minedata.txt (opprett denne selv). Programmet skal telle antall linjer lest og skrive dette antallet ut på skjermen.
+
+
+Oppgave 2:
+Prøv programmet uten at filen ”minedata.txt” eksisterer. Hva skjer?
+Opprett en ny fil kalt minedata.txt, men lagre ingen data i den (bruk en teksteditor). Nå skal antall linjer lest bli 0. Stemmer det?
+Skriv inn data i filen. Prøv programmet. Stemmer resultatet?
+Legg tekstfilen i en undermappe som heter MineData. Hvilke endringer må du nå gjøre i programmet?
+
+Oppgave 3:
+Jobb videre med MineData.java. Linjene som leses inn fra filen minedata-utf8.txt (vedlagt til øvingen) skal omformes til bare store bokstaver og skrives til filen dinedata.txt etter hvert som de leses inn.
+
+NB! Hvis du sitter på Windows og får feil på noen tegn her, hopp direkte til oppgave 4.
+
+Oppgave 4:
+Hvis du prøver å endre filen til å lese fra minedata-utf16.txt (vedlagt til øvingen) istedet, vil du sannsynligvis få feil på noen tegn. I dokumentasjonen for java.io.FileReader står følgende: "Convenience class for reading character files. The constructors of this class assume that the default character encoding and the default byte-buffer size are appropriate. To specify these values yourself, construct an InputStreamReader on a FileInputStream."
+
+Se om du greier å endre det koden til å heller bruke en InputStreamReader ut fra en FileInputStream, og sett tegnsettet på readeren til å være UTF-16, slik at det som skrives til dinedata.txt blir korrekt. Søk på nett om du får problemer.
+
+NB! Java har noe som heter StandardCharsets (https://docs.oracle.com/javase/8/docs/api/java/nio/charset/StandardCharsets.html), men dette ligger i java.nio-pakken. Den kan importeres med "import java.nio.charset.StandardCharsets;". Dette er såkalte konstant-definisjoner, og kan derfor brukes når når en konstruktør eller en metode krever et parameter av typen Charset. 
+
+Oppgave 5:
+I minedata-utf8.txt, er det tre tomme linjer, som gir oss fire paragrafer med tekst. Vedlagt er en liten klasse (Paragrafer) for å lagre hver paragraf (ved addParagraf(String paragraf)). Les gjennom minedata-utf8.txt, og legg det du leser inn i en String. Hvis du kommer over en tom linje, legg til strengen som en paragraf i klassen Paragrafer, før du leser videre i minedata-utf8.txt. Du kan skrive ut restultatet til slutt ved å bruke toString() i Paragrafer.
+
+Oppgave 6:
+Utvid programmet fra oppgave 5 til å serialisere klassen Paragrafer etter at minedata.txt er lest gjennom. Klassen Paragrafer mangler noe, så korriger først denne mangelen, og skriv deretter koden for å serialisere klassen Paragrafer til en fil med navnet paragrafer.ser.
+
+Relevante eksempelfiler:
+Bok.java, BokRegister.java
+
+Oppgave 7:
+Skriv kode for å deserialisere paragrafer.ser, og skriv ut resultatet til skjerm. Sjekk at det som skrives ut stemmer overens med det som står i minedata.txt.
+
+Relevante eksempelfiler:
+Bok.java, BokRegister.java

@@ -1,0 +1,16 @@
+Dette er en tekstfil
+som har litt tekst i seg
+og skal brukes i forbindelse
+med en oppgave i IDATT2001
+
+Vi legger også inn noen tomme
+linjer
+
+I håp om å greie å fremprovosere
+noen feil.
+
+I tillegg har vi særnorske tegn
+som gjør at det kan blir problemer
+med tegnsettet, hvis det leses av
+med et annet tegnsett enn det kilden
+er.
