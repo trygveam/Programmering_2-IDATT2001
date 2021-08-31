@@ -1,0 +1,28 @@
+.root {
+    -fx-background-image:url('../img/math.jpg');
+    -fx-background-position: center center;
+    -fx-background-size: 100% 100%;
+}
+.button{
+    -fx-background-color: FFFFFF;
+    -fx-background-radius: 15;
+    -fx-text-fill: black;
+}
+#exitButton{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.label{
+-fx-background-color: black;
+}
+#cardDisplay{
+    -fx-background-color: #309383;
+    -fx-background-radius: 30;
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+}
+#resultDisplay{
+    -fx-background-color: C4C4C4;
+    -fx-background-radius: 30;
+    -fx-text-fill: black;
+}
