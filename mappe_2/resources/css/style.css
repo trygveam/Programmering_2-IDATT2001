@@ -1,0 +1,18 @@
+#addButton{
+    -fx-background-image: url("../img/add.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 80% 80%;
+    -fx-background-position: center;
+}
+#editButton{
+    -fx-background-image: url("../img/edit.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 80% 80%;
+    -fx-background-position: center;
+}
+#removeButton{
+    -fx-background-image: url("../img/remove.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 80% 80%;
+    -fx-background-position: center;
+}
